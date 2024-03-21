@@ -1,0 +1,48 @@
+﻿@model Site.test.Models.Produto
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Produto</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Marca)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Marca)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Data)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Data)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Destinatario)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Destinatario)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Destino)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Destino)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-warning">Editar</a> |
+    <a asp-action="Index">Voltar para lista</a>
+</div>
